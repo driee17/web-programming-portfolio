@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.0",
+    "needle": "^3.3.1"
+  }
+}

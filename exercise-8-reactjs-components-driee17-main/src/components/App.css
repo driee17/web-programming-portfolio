@@ -1,0 +1,163 @@
+/* Global Styles */
+#root {
+  margin: 0 auto;          /* Center the root element */
+  padding: 2rem;          /* Add padding around the root element */
+  text-align: center;      /* Center-align text within the root element */
+}
+
+/* Header Styles */
+.header {
+  background-color: #103683; /* Dark blue background for the header */
+  color: white;              /* White text color for header elements */
+  padding: 20px;            /* Add spacing around the header */
+  display: flex;            /* Use Flexbox for layout of header elements */
+  justify-content: space-between; /* Space out elements between left and right */
+  align-items: center;      /* Center items vertically in the header */
+}
+
+.header h1 {
+  font-size: 2.5em;         /* Large font size for the header title */
+  margin: 0;                /* Remove default margin for the title */
+  flex: 1;                  /* Allow the h1 to take up available space */
+  text-align: left;         /* Align the title text to the left */
+}
+
+.header .buttons {          /* Class for button container within the header */
+  display: flex;            /* Use Flexbox for layout of buttons */
+}
+
+.header button {
+  background-color: #08bff1; /* Light blue background for buttons */
+  border: none;              /* Remove default border from buttons */
+  color: #282c34;           /* Dark text color for buttons */
+  padding: 10px 20px;       /* Padding inside buttons for better click area */
+  margin-left: 5px;         /* Spacing between buttons */
+  font-size: 1em;           /* Font size for button text */
+  cursor: pointer;          /* Change cursor to pointer on hover */
+  border-radius: 5px;      /* Rounded corners for buttons */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.header button:hover {
+  background-color: #21a1f1; /* Darker blue background on hover for buttons */
+}
+
+/* Appliances Section Styles */
+.appliances {
+  display: flex;            /* Use Flexbox for layout of appliances */
+  justify-content: start;   /* Align appliances to the start of the container */
+  flex-wrap: wrap;         /* Allow appliances to wrap to the next line */
+  padding: 20px;           /* Add padding around the appliances section */
+}
+
+/* Individual Appliance Card Styles */
+.appliances_card {
+  background-color: #fff;  /* White background for appliance cards */
+  border-radius: 10px;     /* Rounded corners for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  margin: 15px;            /* Margin around each card */
+  padding: 20px;           /* Padding inside the card */
+  width: 200px;            /* Fixed width for appliance cards */
+  text-align: center;      /* Center-align text within the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  max-height: min-content; /* Ensure card does not exceed content height */
+}
+
+.appliances_card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover for emphasis */
+}
+
+/* Appliance Image Styles */
+.appliance-image {
+  width: 100%;             /* Make image take full width of card */
+  height: auto;            /* Maintain aspect ratio of image */
+  border-radius: 5px;      /* Rounded corners for the image */
+}
+
+/* Appliance Name Styles */
+.appliance-name {
+  font-size: 20px;         /* Font size for the appliance name */
+  color: #140e0e;          /* Dark color for the name text */
+  margin-top: 15px;        /* Space above the appliance name */
+}
+
+/* Flex Container for Appliances and Shopping Cart */
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  gap: 5px; /* Gap between the items in the shopping cart */
+  padding: 10px; /* Padding around the flex container */
+}
+
+/* Shopping Cart Section */
+.shopping_cart {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;  /* Allow items to wrap to the next line */
+  gap: 5px; /* Add space between each item card */
+  padding: 10px; /* Padding around the shopping cart section */
+  align-items: flex-start; /* Align items to the top of the container */
+}
+
+/* Individual Shopping Cart Card */
+.shoppingcart_card {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  background-color: #fff;  /* White background for appliance cards */
+  border-radius: 10px;     /* Rounded corners for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  padding: 20px;           /* Padding inside the card */
+  text-align: center;      /* Center-align text within the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  align-items: center;     /* Center content vertically inside the card */
+  justify-content: space-between; /* Justify content to take up the space fully */
+}
+
+.shoppingcart_card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover for emphasis */
+}
+
+.shoppingcart_card h3 {
+  font-size: 14px;         /* Font size for the appliance name */
+  color: #140e0e;          /* Dark color for the name text */
+  margin-right: 15px;        /* Space above the appliance name */
+  text-align: center;      /* Center-align the appliance name */
+}
+
+.shoppingcart_card p {
+  font-size: 12px;         /* Font size for quantity */
+  margin-right: 10px;        /* Space above quantity text */
+  color: #665;             /* Light grey color for quantity */
+}
+
+.shoppingcart_card button {
+  background-color: #f44336; /* Red background for remove button */
+  border: none;              /* Remove default border */
+  color: white;              /* White text color */
+  padding: 8px 16px;         /* Padding inside the button */
+  margin-right: 10px;          /* Space above the button */
+  font-size: 14px;           /* Font size for button text */
+  cursor: pointer;          /* Change cursor to pointer on hover */
+  border-radius: 5px;        /* Rounded corners for button */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.shoppingcart_card button:hover {
+  background-color: #d32f2f; /* Darker red when hovering over button */
+}
+
+/* Responsive Design: Adjusting the layout for smaller screens */
+@media (max-width: 768px) {
+  .shopping_cart {
+    justify-content: center; /* Center items on smaller screens */
+    gap: 15px; /* Reduced gap for smaller screens */
+  }
+
+  .shoppingcart_card {
+    flex: 1 1 150px; /* Allow smaller cards on smaller screens */
+    max-width: 150px; /* Restrict max-width of cards */
+  }
+}

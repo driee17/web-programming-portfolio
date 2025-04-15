@@ -1,0 +1,129 @@
+#header.container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* webpage theme */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* navigation header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+header .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navigation buttons */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* featured image */
+.featured {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.featured img {
+  height: 680px;
+  width: 1050px;
+}
+
+section {
+  padding: 2rem 0;
+}
+section .container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* for projects */
+#projects.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.project {
+  flex: 10;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* for skills and autobiography */
+#skills-autobiography.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.skills-about {
+  flex: 10;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* for footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: left;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+#contact.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+#contact.container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+#contact ul li {
+  margin-bottom: 10px;
+}
+#contact ul li a {
+  color: #fff;
+}

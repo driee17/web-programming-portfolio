@@ -1,0 +1,119 @@
+<!--
+CMSC 100 Lab Exercise 2: HTML and CSS
+Adrian B. Cueto
+2020-02461
+BS Computer Science
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adrian Cueto's Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="icon" href="assets/icon.jpg" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header>
+      <div class="container" id="header">
+        <img src="assets/icon.jpg" />
+        <h1>Adrian B. Cueto</h1>
+        <nav>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- featured photo -->
+    <div class="featured">
+      <h2>Featured Photo</h2>
+      <img src="assets/featured.jpg" />
+    </div>
+    <!-- previous projects -->
+    <section id="projects">
+      <div class="container">
+        <h2>Previous Projects</h2>
+        <div class="flex-container" id="projects">
+          <div class="project">
+            <h3>Hangman</h3>
+            <p>
+              A terminal-based game developed in Python. It implements the use
+              of lists, dictionaries and graphics from a separate file.
+            </p>
+          </div>
+          <div class="project">
+            <h3>QSI and Simplex Method Calculator</h3>
+            <p>
+              A web application that calculates Quadratic Spline Interpolation
+              and Simplex Method and can generate dynamic tables according to
+              the user's preference. Developed using R and RShiny.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Powerpuff Bomb Bonanza</h3>
+            <p>
+              A 2-player, action, maze game inspired by the game Bomberman and
+              the show Powerpuff Girls. Developed using Java and JavaFX.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Rick-Bot</h3>
+            <p>
+              A discord bot that utilizes basic functionalities such as creating
+              polls, switching of voice channels, and a special 'rickroll'
+              feature.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills and autobiography -->
+    <section id="skills-autobiography">
+      <div class="container">
+        <div class="flex-container" id="skills-autobiography">
+          <div class="skills-about" id="skills">
+            <h1>Skills</h1>
+            <p>
+              I have experience in using programming languages such as Python,
+              C, Java, R, and JavaScript. I have also developed mobile
+              applications using Dart and Flutter. I am also capable of using
+              office tools such as MS Office, Google Workspace (Docs, Forms,
+              Sheets), and I am also capable of using editing software such as
+              Adobe Photoshop, Canva, and DaVinci Resolve. Lastly, I am a good
+              team player, effective communicator, and a critical thinker.
+            </p>
+          </div>
+          <div class="skills-about" id="about">
+            <h1>Autobiography</h1>
+            <p>
+              Hello, I am Adrian Cueto, a BS Computer Science student at the
+              University of the Philippines Los Banos. My hobbies are: playing
+              video games, playing musical instruments (piano and guitar),
+              eating, and sleeping. My favorite food is Tinolang Manok. My
+              mother cooks Tinola as our dish at home often and I always liked
+              how it tastes. I also like to watch movies with friends and
+              family.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <div class="container" , id="contact">
+        <img src="assets/icon.jpg" />
+        <ul>
+          <li>San Jose Del Monte, Bulacan, Philippines</li>
+          <li>abcueto1@up.edu.ph</li>
+          <li><a href="#">Website</a></li>
+          <li>&copy; 2024 Adrian Cueto. All rights reserved.</li>
+          <li><a href="#top">Back to Top</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

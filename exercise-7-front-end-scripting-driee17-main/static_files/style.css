@@ -1,0 +1,139 @@
+/* General layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Food Form */
+.food-form-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333;
+}
+
+#food-form {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sidebar Navigation */
+.sidebar-navigation {
+  background-color: #333;
+  width: 15%;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.favorite-element {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.favorite-element a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.favorite-element a:hover {
+  background-color: #007bff;
+}
+
+/* Favorite Foods Section */
+.favorite-foods {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.food {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-height: min-content;
+}
+
+.food:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.food-name {
+  font-size: 22px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.food-info {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Right Sidebar Ads */
+.ads-sidebar {
+  background-color: gray;
+  width: 15%;
+  padding: 20px;
+}
+
+.ad {
+  margin-bottom: 20px;
+}
+
+.ad img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .favorite-foods {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .food {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-navigation {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
