@@ -18,13 +18,10 @@ Depending on the specific project folders in this repo, the following technologi
 
 - HTML5 & CSS3
 - JavaScript (ES6+)
-- PHP
-- Laravel
-- MySQL
 - Node.js
 - Express
-- React (if applicable)
-- Bootstrap / TailwindCSS
+- React + Vite
+- MongoDB
 
 ## 🛠️ Getting Started
 
